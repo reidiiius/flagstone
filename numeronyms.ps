@@ -3,7 +3,7 @@
 %%Creator: Reid Netterville III
 %%DocumentFonts: NimbusMonoPS-Regular
 %%BoundingBox: 0 0 612 792
-%%Pages: 26
+%%Pages: 18
 %%EndComments
 
 
@@ -22,11 +22,13 @@
      /J25  (qr vp __ __ pv rq wo __ __ yu __ ow ) def
      /J26  (vv zq __ __ ry wu __ uw yr __ __ qz ) def
      /J2H  (vr zp __ __ rv wq __ us __ su __ qw ) def
+     /J35  (yr __ ot qz __ zq to __ __ wu __ uw ) def
      /J36  (vu __ tw xr __ wt __ uv yq __ __ qy ) def
      /J56  (xr __ wt __ uv yq so __ qy __ __ tw ) def
      /J5H  (xr __ wt __ uv yq so __ __ vu __ tw ) def
      /K12  (__ sx __ qz vv zq __ xs __ wu __ uw ) def
      /K15  (__ rx wt __ uv yq __ __ qy vu __ tw ) def
+     /K16  (__ zq to __ ry wu __ uw __ __ ot qz ) def
      /K25  (yr __ __ qz vv zq __ __ ry wu __ uw ) def
      /K26  (vp __ __ pv rq wo __ uy __ __ ow qr ) def
      /K2H  (vr __ __ pz rv wq __ us __ su __ qw ) def
@@ -121,7 +123,7 @@
 
 /Fingerboard
 {
-  .0 .15 .15 setrgbcolor
+  .0 .0 .0 setrgbcolor
   signa 50 736 Scribe  % diadem
 
   /heads clave 30  6 getinterval def
@@ -184,1657 +186,1621 @@
 } def
 
 /MarginBorder
-{  18   18 moveto     % 612 792 bounds
+{
+   18   18 moveto     % 612 792 bounds
     0  756 rlineto    % 756 pts high
   576    0 rlineto    % 576 pts wide
     0 -756 rlineto
   closepath
-  .6 setgray
+  .5 setgray
   .2 setlinewidth
   stroke
 } bind def
+
+% 144 pts wide by 252 pts high
 
 /CrossBeams
 {
-   18   54 moveto
+  % horizontal lines
+   18  270 moveto
   576    0 rlineto
-  .6 setgray
+  .5 setgray
   .2 setlinewidth
   stroke
 
-   18  234 moveto
+   18  522 moveto
   576    0 rlineto
-  .6 setgray
+  .5 setgray
   .2 setlinewidth
   stroke
 
-   18  414 moveto
-  576    0 rlineto
-  .6 setgray
+  % vertical lines
+  162  774 moveto
+    0 -756 rlineto
+  .5 setgray
   .2 setlinewidth
   stroke
 
-   18  594 moveto
-  576    0 rlineto
-  .6 setgray
+  306  774 moveto
+    0 -756 rlineto
+  .5 setgray
   .2 setlinewidth
   stroke
 
-  306  774 moveto  % vertical center line
-    0 -720 rlineto
-  .6 setgray
+  450  774 moveto
+    0 -756 rlineto
+  .5 setgray
   .2 setlinewidth
   stroke
+
 } bind def
 
-/OuterMost          % STK: x y ---
-{ moveto
-    0  144 rlineto    % 144 pts high
-  252    0 rlineto    % 252 pts wide
-    0 -144 rlineto
-  closepath
-  .6 setgray
-  .2 setlinewidth
-  stroke
-} bind def
-
-/InnerMost            % STK: x y ---
-{ moveto
-    0  126 rlineto     % 126 pts high
-  234    0 rlineto     % 234 pts wide
-    0 -126 rlineto
-  closepath
-  .8 setgray
-  .2 setlinewidth
-  stroke
-} bind def
-
-/Octavia
+/GuideLines            % STK: x y ---
 {
-  36 612 OuterMost
-%  45 621 InnerMost
- 
- 324 612 OuterMost
-% 333 621 InnerMost
- 
-  36 432 OuterMost
-%  45 441 InnerMost
- 
- 324 432 OuterMost
-% 333 441 InnerMost
- 
-  36 252 OuterMost
-%  45 261 InnerMost
- 
- 324 252 OuterMost
-% 333 261 InnerMost
- 
-  36  72 OuterMost
-%  45  81 InnerMost
- 
- 324  72 OuterMost
-% 333  81 InnerMost
-} def
+  moveto
+    0  234 rlineto     % 234 pts high
+  126    0 rlineto     % 126 pts wide
+    0 -234 rlineto
+  closepath
+  .5 setgray
+  .2 setlinewidth
+  stroke
+} bind def
+
+/InnerGuides
+{
+   27  27 GuideLines
+  171  27 GuideLines
+  315  27 GuideLines
+  459  27 GuideLines
+  
+   27 279 GuideLines
+  171 279 GuideLines
+  315 279 GuideLines
+  459 279 GuideLines
+  
+   27 531 GuideLines
+  171 531 GuideLines
+  315 531 GuideLines
+  459 531 GuideLines
+} bind def
+
+/LayoutGrid
+{
+  MarginBorder CrossBeams
+%  InnerGuides
+} bind def  
+
 
 /NimbusMonoPS-Regular 10.75 selectfont
 
 
 %%Page: 1 1
 
-% verso-01
+% verso
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave J2L3H def
- /signa (J2L3H-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  J2L3H def
+ /signa (J2L3H-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J2H def
- /signa (J2H-I1606973870) def
+ /clave  J2H def
+ /signa (J2H-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K5M4 def
- /signa (K5M4-I1606973870) def
+ /clave  K2H def
+ /signa (K2H-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K35M24 def
- /signa (K35M24-I1606973870) def
+ /clave  K2M1H def
+ /signa (K2M1H-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave K2M1H def
- /signa (K2M1H-I1606973870) def
+ 252 0 translate
+
+ /clave  K5M4 def
+ /signa (K5M4-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K2H def
- /signa (K2H-I1606973870) def
+ /clave  K35M24 def
+ /signa (K35M24-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J6L7 def
- /signa (J6L7-I1606973870) def
+ /clave  J16L27 def
+ /signa (J16L27-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J16L27 def
- /signa (J16L27-I1606973870) def
+ /clave  J6L7 def
+ /signa (J6L7-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 01 obv) show
+ 252 0 translate
+
+ /clave  K6 def
+ /signa (K6-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K6M5 def
+ /signa (K6M5-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J5L6 def
+ /signa (J5L6-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J5 def
+ /signa (J5-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 2 2
 
-% recto-01
+% recto
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave J2L3H def
- /signa (J2L3H-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  J2L3H def
+ /signa (J2L3H-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J2H def
- /signa (J2H-I1606973870) def
+ /clave  J2H def
+ /signa (J2H-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K5M4 def
- /signa (K5M4-I1606973870) def
+ /clave  K2H def
+ /signa (K2H-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K35M24 def
- /signa (K35M24-I1606973870) def
+ /clave  K2M1H def
+ /signa (K2M1H-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave K2M1H def
- /signa (K2M1H-I1606973870) def
+ 252 0 translate
+
+ /clave  K5M4 def
+ /signa (K5M4-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K2H def
- /signa (K2H-I1606973870) def
+ /clave  K35M24 def
+ /signa (K35M24-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J6L7 def
- /signa (J6L7-I1606973870) def
+ /clave  J16L27 def
+ /signa (J16L27-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J16L27 def
- /signa (J16L27-I1606973870) def
+ /clave  J6L7 def
+ /signa (J6L7-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 01 rev) show
+ 252 0 translate
+
+ /clave  K6 def
+ /signa (K6-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K6M5 def
+ /signa (K6M5-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J5L6 def
+ /signa (J5L6-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J5 def
+ /signa (J5-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 3 3
 
-% verso-02
+% verso
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave K6 def
- /signa (K6-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  K6M5 def
+ /signa (K6M5-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K6M5 def
- /signa (K6M5-I1606973870) def
+ /clave  J17 def
+ /signa (J17-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J17 def
- /signa (J17-I1606973870) def
+ /clave  K34 def
+ /signa (K34-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J17L2 def
- /signa (J17L2-I1606973870) def
+ /clave  J5L6 def
+ /signa (J5L6-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave J5 def
- /signa (J5-I1606973870) def
+ 252 0 translate
+
+ /clave  J17L2 def
+ /signa (J17L2-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J5L6 def
- /signa (J5L6-I1606973870) def
+ /clave  N0 def
+ /signa (N0-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K34 def
- /signa (K34-I1606973870) def
+ /clave  N0 def
+ /signa (N0-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K34M2 def
- /signa (K34M2-I1606973870) def
+ /clave  K34M2 def
+ /signa (K34M2-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 02 obv) show
+ 252 0 translate
+
+ /clave  J3 def
+ /signa (J3-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J34K6 def
+ /signa (J34K6-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K17J5 def
+ /signa (K17J5-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K1 def
+ /signa (K1-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 4 4
 
-% recto-02
+% recto
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave K6 def
- /signa (K6-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  K6M5 def
+ /signa (K6M5-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K6M5 def
- /signa (K6M5-I1606973870) def
+ /clave  J17 def
+ /signa (J17-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J17 def
- /signa (J17-I1606973870) def
+ /clave  K34 def
+ /signa (K34-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J17L2 def
- /signa (J17L2-I1606973870) def
+ /clave  J5L6 def
+ /signa (J5L6-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave J5 def
- /signa (J5-I1606973870) def
+ 252 0 translate
+
+ /clave  J17L2 def
+ /signa (J17L2-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J5L6 def
- /signa (J5L6-I1606973870) def
+ /clave  N0 def
+ /signa (N0-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K34 def
- /signa (K34-I1606973870) def
+ /clave  N0 def
+ /signa (N0-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K34M2 def
- /signa (K34M2-I1606973870) def
+ /clave  K34M2 def
+ /signa (K34M2-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 02 rev) show
+ 252 0 translate
+
+ /clave  J3 def
+ /signa (J3-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J34K6 def
+ /signa (J34K6-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K17J5 def
+ /signa (K17J5-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K1 def
+ /signa (K1-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 5 5
 
-% verso-03
+% verso
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave N0 def
- /signa (N0-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  K2J17 def
+ /signa (K2J17-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J3 def
- /signa (J3-I1606973870) def
+ /clave  N26L5 def
+ /signa (N26L5-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J34K6 def
- /signa (J34K6-I1606973870) def
+ /clave  N25M6 def
+ /signa (N25M6-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K2J17 def
- /signa (K2J17-I1606973870) def
+ /clave  J2K34 def
+ /signa (J2K34-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave N0 def
- /signa (N0-I1606973870) def
+ 252 0 translate
+
+ /clave  K26M5 def
+ /signa (K26M5-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K1 def
- /signa (K1-I1606973870) def
+ /clave  K6H def
+ /signa (K6H-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K17J5 def
- /signa (K17J5-I1606973870) def
+ /clave  J5H def
+ /signa (J5H-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J2K34 def
- /signa (J2K34-I1606973870) def
+ /clave  J25L6 def
+ /signa (J25L6-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 03 obv) show
+ 252 0 translate
+
+ /clave  K2J6H def
+ /signa (K2J6H-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J6 def
+ /signa (J6-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K5 def
+ /signa (K5-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J2K5H def
+ /signa (J2K5H-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 6 6
 
-% recto-03
+% recto
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave N0 def
- /signa (N0-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  K2J17 def
+ /signa (K2J17-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J3 def
- /signa (J3-I1606973870) def
+ /clave  N26L5 def
+ /signa (N26L5-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J34K6 def
- /signa (J34K6-I1606973870) def
+ /clave  N25M6 def
+ /signa (N25M6-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K2J17 def
- /signa (K2J17-I1606973870) def
+ /clave  J2K34 def
+ /signa (J2K34-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave N0 def
- /signa (N0-I1606973870) def
+ 252 0 translate
+
+ /clave  K26M5 def
+ /signa (K26M5-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K1 def
- /signa (K1-I1606973870) def
+ /clave  K6H def
+ /signa (K6H-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K17J5 def
- /signa (K17J5-I1606973870) def
+ /clave  J5H def
+ /signa (J5H-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J2K34 def
- /signa (J2K34-I1606973870) def
+ /clave  J25L6 def
+ /signa (J25L6-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 03 rev) show
+ 252 0 translate
+
+ /clave  K2J6H def
+ /signa (K2J6H-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J6 def
+ /signa (J6-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K5 def
+ /signa (K5-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J2K5H def
+ /signa (J2K5H-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 7 7
 
-% verso-04
+% verso
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave N26L5 def
- /signa (N26L5-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  J36 def
+ /signa (J36-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K26M5 def
- /signa (K26M5-I1606973870) def
+ /clave  K56 def
+ /signa (K56-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K6H def
- /signa (K6H-I1606973870) def
+ /clave  J56 def
+ /signa (J56-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K2J6H def
- /signa (K2J6H-I1606973870) def
+ /clave  K15 def
+ /signa (K15-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave N25M6 def
- /signa (N25M6-I1606973870) def
+ 252 0 translate
+
+ /clave  J136L7 def
+ /signa (J136L7-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J25L6 def
- /signa (J25L6-I1606973870) def
+ /clave  K56M4 def
+ /signa (K56M4-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J5H def
- /signa (J5H-I1606973870) def
+ /clave  J56L7 def
+ /signa (J56L7-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J2K5H def
- /signa (J2K5H-I1606973870) def
+ /clave  K135M4 def
+ /signa (K135M4-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 04 obv) show
+ 252 0 translate
+
+ /clave  N167M4 def
+ /signa (N167M4-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J3K5M4 def
+ /signa (J3K5M4-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K1J6L7 def
+ /signa (K1J6L7-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  N345L7 def
+ /signa (N345L7-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 8 8
 
-% recto-04
+% recto
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave N26L5 def
- /signa (N26L5-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  J36 def
+ /signa (J36-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K26M5 def
- /signa (K26M5-I1606973870) def
+ /clave  K56 def
+ /signa (K56-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K6H def
- /signa (K6H-I1606973870) def
+ /clave  J56 def
+ /signa (J56-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K2J6H def
- /signa (K2J6H-I1606973870) def
+ /clave  K15 def
+ /signa (K15-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave N25M6 def
- /signa (N25M6-I1606973870) def
+ 252 0 translate
+
+ /clave  J136L7 def
+ /signa (J136L7-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J25L6 def
- /signa (J25L6-I1606973870) def
+ /clave  K56M4 def
+ /signa (K56M4-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J5H def
- /signa (J5H-I1606973870) def
+ /clave  J56L7 def
+ /signa (J56L7-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J2K5H def
- /signa (J2K5H-I1606973870) def
+ /clave  K135M4 def
+ /signa (K135M4-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 04 rev) show
+ 252 0 translate
+
+ /clave  N167M4 def
+ /signa (N167M4-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J3K5M4 def
+ /signa (J3K5M4-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K1J6L7 def
+ /signa (K1J6L7-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  N345L7 def
+ /signa (N345L7-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 9 9
 
-% verso-05
+% verso
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave J6 def
- /signa (J6-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  J167L2 def
+ /signa (J167L2-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J36 def
- /signa (J36-I1606973870) def
+ /clave  J2 def
+ /signa (J2-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K56 def
- /signa (K56-I1606973870) def
+ /clave  K2 def
+ /signa (K2-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J136L7 def
- /signa (J136L7-I1606973870) def
+ /clave  K345M2 def
+ /signa (K345M2-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave K5 def
- /signa (K5-I1606973870) def
+ 252 0 translate
+
+ /clave  J236 def
+ /signa (J236-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K15 def
- /signa (K15-I1606973870) def
+ /clave  J26 def
+ /signa (J26-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J56 def
- /signa (J56-I1606973870) def
+ /clave  K25 def
+ /signa (K25-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K135M4 def
- /signa (K135M4-I1606973870) def
+ /clave  K125 def
+ /signa (K125-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 05 obv) show
+ 252 0 translate
+
+ /clave  J23 def
+ /signa (J23-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J23K6 def
+ /signa (J23K6-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K12J5 def
+ /signa (K12J5-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K12 def
+ /signa (K12-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 10 10
 
-% recto-05
+% recto
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave J6 def
- /signa (J6-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  J167L2 def
+ /signa (J167L2-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J36 def
- /signa (J36-I1606973870) def
+ /clave  J2 def
+ /signa (J2-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K56 def
- /signa (K56-I1606973870) def
+ /clave  K2 def
+ /signa (K2-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J136L7 def
- /signa (J136L7-I1606973870) def
+ /clave  K345M2 def
+ /signa (K345M2-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave K5 def
- /signa (K5-I1606973870) def
+ 252 0 translate
+
+ /clave  J236 def
+ /signa (J236-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K15 def
- /signa (K15-I1606973870) def
+ /clave  J26 def
+ /signa (J26-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J56 def
- /signa (J56-I1606973870) def
+ /clave  K25 def
+ /signa (K25-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K135M4 def
- /signa (K135M4-I1606973870) def
+ /clave  K125 def
+ /signa (K125-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 05 rev) show
+ 252 0 translate
+
+ /clave  J23 def
+ /signa (J23-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J23K6 def
+ /signa (J23K6-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K12J5 def
+ /signa (K12J5-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K12 def
+ /signa (K12-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 11 11
 
-% verso-06
+% verso
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave K56M4 def
- /signa (K56M4-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  J2L3 def
+ /signa (J2L3-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave N167M4 def
- /signa (N167M4-I1606973870) def
+ /clave  J2K6 def
+ /signa (J2K6-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J3K5M4 def
- /signa (J3K5M4-I1606973870) def
+ /clave  K2J5 def
+ /signa (K2J5-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J167L2 def
- /signa (J167L2-I1606973870) def
+ /clave  K2M1 def
+ /signa (K2M1-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave J56L7 def
- /signa (J56L7-I1606973870) def
+ 252 0 translate
+
+ /clave  J26L3 def
+ /signa (J26L3-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave N345L7 def
- /signa (N345L7-I1606973870) def
+ /clave  J2K56 def
+ /signa (J2K56-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K1J6L7 def
- /signa (K1J6L7-I1606973870) def
+ /clave  K2J56 def
+ /signa (K2J56-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K345M2 def
- /signa (K345M2-I1606973870) def
+ /clave  K25M1 def
+ /signa (K25M1-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 06 obv) show
+ 252 0 translate
+
+ /clave  J246L3 def
+ /signa (J246L3-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J2K56M4 def
+ /signa (J2K56M4-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K2J56L7 def
+ /signa (K2J56L7-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K257M1 def
+ /signa (K257M1-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 12 12
 
-% recto-06
+% recto
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave K56M4 def
- /signa (K56M4-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  J2L3 def
+ /signa (J2L3-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave N167M4 def
- /signa (N167M4-I1606973870) def
+ /clave  J2K6 def
+ /signa (J2K6-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J3K5M4 def
- /signa (J3K5M4-I1606973870) def
+ /clave  K2J5 def
+ /signa (K2J5-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J167L2 def
- /signa (J167L2-I1606973870) def
+ /clave  K2M1 def
+ /signa (K2M1-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave J56L7 def
- /signa (J56L7-I1606973870) def
+ 252 0 translate
+
+ /clave  J26L3 def
+ /signa (J26L3-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave N345L7 def
- /signa (N345L7-I1606973870) def
+ /clave  J2K56 def
+ /signa (J2K56-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K1J6L7 def
- /signa (K1J6L7-I1606973870) def
+ /clave  K2J56 def
+ /signa (K2J56-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K345M2 def
- /signa (K345M2-I1606973870) def
+ /clave  K25M1 def
+ /signa (K25M1-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 06 rev) show
+ 252 0 translate
+
+ /clave  J246L3 def
+ /signa (J246L3-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J2K56M4 def
+ /signa (J2K56M4-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K2J56L7 def
+ /signa (K2J56L7-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K257M1 def
+ /signa (K257M1-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 13 13
 
-% verso-07
+% verso
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave J2 def
- /signa (J2-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  K157M6 def
+ /signa (K157M6-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J236 def
- /signa (J236-I1606973870) def
+ /clave  J26L34 def
+ /signa (J26L34-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J26 def
- /signa (J26-I1606973870) def
+ /clave  K25M17 def
+ /signa (K25M17-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J23 def
- /signa (J23-I1606973870) def
+ /clave  J346L5 def
+ /signa (J346L5-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave K2 def
- /signa (K2-I1606973870) def
+ 252 0 translate
+
+ /clave  J2K6M5 def
+ /signa (J2K6M5-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K125 def
- /signa (K125-I1606973870) def
+ /clave  J2K6L3 def
+ /signa (J2K6L3-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K25 def
- /signa (K25-I1606973870) def
+ /clave  K2J5M1 def
+ /signa (K2J5M1-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K12 def
- /signa (K12-I1606973870) def
+ /clave  K2J5L6 def
+ /signa (K2J5L6-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 07 obv) show
+ 252 0 translate
+
+ /clave  J167L2H def
+ /signa (J167L2H-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K1J6 def
+ /signa (K1J6-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J3K5 def
+ /signa (J3K5-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K345M2H def
+ /signa (K345M2H-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 14 14
 
-% recto-07
+% recto
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave J2 def
- /signa (J2-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  K157M6 def
+ /signa (K157M6-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J236 def
- /signa (J236-I1606973870) def
+ /clave  J26L34 def
+ /signa (J26L34-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J26 def
- /signa (J26-I1606973870) def
+ /clave  K25M17 def
+ /signa (K25M17-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J23 def
- /signa (J23-I1606973870) def
+ /clave  J346L5 def
+ /signa (J346L5-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave K2 def
- /signa (K2-I1606973870) def
+ 252 0 translate
+
+ /clave  J2K6M5 def
+ /signa (J2K6M5-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K125 def
- /signa (K125-I1606973870) def
+ /clave  J2K6L3 def
+ /signa (J2K6L3-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K25 def
- /signa (K25-I1606973870) def
+ /clave  K2J5M1 def
+ /signa (K2J5M1-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K12 def
- /signa (K12-I1606973870) def
+ /clave  K2J5L6 def
+ /signa (K2J5L6-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 07 rev) show
+ 252 0 translate
+
+ /clave  J167L2H def
+ /signa (J167L2H-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K1J6 def
+ /signa (K1J6-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J3K5 def
+ /signa (J3K5-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K345M2H def
+ /signa (K345M2H-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 15 15
 
-% verso-08
+% verso
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave J23K6 def
- /signa (J23K6-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  N345 def
+ /signa (N345-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J2L3 def
- /signa (J2L3-I1606973870) def
+ /clave  K2J6L7 def
+ /signa (K2J6L7-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J2K6 def
- /signa (J2K6-I1606973870) def
+ /clave  J2K5M4 def
+ /signa (J2K5M4-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J26L3 def
- /signa (J26L3-I1606973870) def
+ /clave  N167 def
+ /signa (N167-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave K12J5 def
- /signa (K12J5-I1606973870) def
+ 252 0 translate
+
+ /clave  J3K6 def
+ /signa (J3K6-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K2M1 def
- /signa (K2M1-I1606973870) def
+ /clave  N45L2 def
+ /signa (N45L2-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K2J5 def
- /signa (K2J5-I1606973870) def
+ /clave  N67M2 def
+ /signa (N67M2-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K25M1 def
- /signa (K25M1-I1606973870) def
+ /clave  K1J5 def
+ /signa (K1J5-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 08 obv) show
+ 252 0 translate
+
+ /clave  J3K56M4 def
+ /signa (J3K56M4-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J36H def
+ /signa (J36H-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K15H def
+ /signa (K15H-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K1J56L7 def
+ /signa (K1J56L7-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 16 16
 
-% recto-08
+% recto
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave J23K6 def
- /signa (J23K6-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  N345 def
+ /signa (N345-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J2L3 def
- /signa (J2L3-I1606973870) def
+ /clave  K2J6L7 def
+ /signa (K2J6L7-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J2K6 def
- /signa (J2K6-I1606973870) def
+ /clave  J2K5M4 def
+ /signa (J2K5M4-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J26L3 def
- /signa (J26L3-I1606973870) def
+ /clave  N167 def
+ /signa (N167-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave K12J5 def
- /signa (K12J5-I1606973870) def
+ 252 0 translate
+
+ /clave  J3K6 def
+ /signa (J3K6-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K2M1 def
- /signa (K2M1-I1606973870) def
+ /clave  N45L2 def
+ /signa (N45L2-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K2J5 def
- /signa (K2J5-I1606973870) def
+ /clave  N67M2 def
+ /signa (N67M2-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K25M1 def
- /signa (K25M1-I1606973870) def
+ /clave  K1J5 def
+ /signa (K1J5-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 08 rev) show
+ 252 0 translate
+
+ /clave  J3K56M4 def
+ /signa (J3K56M4-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  J36H def
+ /signa (J36H-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K15H def
+ /signa (K15H-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K1J56L7 def
+ /signa (K1J56L7-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 17 17
 
-% verso-09
+% verso
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave J2K56 def
- /signa (J2K56-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  K2J6 def
+ /signa (K2J6-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J246L3 def
- /signa (J246L3-I1606973870) def
+ /clave  N5L2 def
+ /signa (N5L2-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J2K56M4 def
- /signa (J2K56M4-I1606973870) def
+ /clave  N6M2 def
+ /signa (N6M2-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K157M6 def
- /signa (K157M6-I1606973870) def
+ /clave  J2K5 def
+ /signa (J2K5-I1607915836) def
  Fingerboard
 
- 288 540 translate
+% 2nd row
 
- /clave K2J56 def
- /signa (K2J56-I1606973870) def
+ 252 0 translate
+
+ /clave  K26 def
+ /signa (K26-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K257M1 def
- /signa (K257M1-I1606973870) def
+ /clave  K256 def
+ /signa (K256-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K2J56L7 def
- /signa (K2J56L7-I1606973870) def
+ /clave  J256 def
+ /signa (J256-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave J346L5 def
- /signa (J346L5-I1606973870) def
+ /clave  J25 def
+ /signa (J25-I1607915836) def
  Fingerboard
 
- -288 540 translate
+% 3rd row
 
- 272  32 moveto
- (Page 09 obv) show
+ 252 0 translate
+
+ /clave  J35 def
+ /signa (J35-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  Z0 def
+ /signa (Z0-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  Z0 def
+ /signa (Z0-I1607915836) def
+ Fingerboard
+
+ 0 144 translate
+
+ /clave  K16 def
+ /signa (K16-I1607915836) def
+ Fingerboard
 
 showpage
 
 
 %%Page: 18 18
 
-% recto-09
+% recto
+LayoutGrid
 
- MarginBorder CrossBeams Octavia
-
- /clave J2K56 def
- /signa (J2K56-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J246L3 def
- /signa (J246L3-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J2K56M4 def
- /signa (J2K56M4-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave K157M6 def
- /signa (K157M6-I1606973870) def
- Fingerboard
-
- 288 540 translate
-
- /clave K2J56 def
- /signa (K2J56-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave K257M1 def
- /signa (K257M1-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave K2J56L7 def
- /signa (K2J56L7-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J346L5 def
- /signa (J346L5-I1606973870) def
- Fingerboard
-
- -288 540 translate
-
- 272  32 moveto
- (Page 09 rev) show
-
-showpage
-
-
-%%Page: 19 19
-
-% verso-10
-
- MarginBorder CrossBeams Octavia
-
- /clave J26L34 def
- /signa (J26L34-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J2K6M5 def
- /signa (J2K6M5-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J2K6L3 def
- /signa (J2K6L3-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J167L2H def
- /signa (J167L2H-I1606973870) def
- Fingerboard
-
- 288 540 translate
-
- /clave K25M17 def
- /signa (K25M17-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave K2J5L6 def
- /signa (K2J5L6-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave K2J5M1 def
- /signa (K2J5M1-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave K345M2H def
- /signa (K345M2H-I1606973870) def
- Fingerboard
-
- -288 540 translate
-
- 272  32 moveto
- (Page 10 obv) show
-
-showpage
-
-
-%%Page: 20 20
-
-% recto-10
-
- MarginBorder CrossBeams Octavia
-
- /clave J26L34 def
- /signa (J26L34-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J2K6M5 def
- /signa (J2K6M5-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J2K6L3 def
- /signa (J2K6L3-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J167L2H def
- /signa (J167L2H-I1606973870) def
- Fingerboard
-
- 288 540 translate
-
- /clave K25M17 def
- /signa (K25M17-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave K2J5L6 def
- /signa (K2J5L6-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave K2J5M1 def
- /signa (K2J5M1-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave K345M2H def
- /signa (K345M2H-I1606973870) def
- Fingerboard
-
- -288 540 translate
-
- 272  32 moveto
- (Page 10 rev) show
-
-showpage
-
-
-%%Page: 21 21
-
-% verso-11
-
- MarginBorder CrossBeams Octavia
-
- /clave K1J6 def
- /signa (K1J6-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave N345 def
- /signa (N345-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave K2J6L7 def
- /signa (K2J6L7-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave Z0 def
- /signa (Z0-I1606973870) def
- Fingerboard
-
- 288 540 translate
-
- /clave J3K5 def
- /signa (J3K5-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave N167 def
- /signa (N167-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J2K5M4 def
- /signa (J2K5M4-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave Z0 def
- /signa (Z0-I1606973870) def
- Fingerboard
-
- -288 540 translate
-
- 272  32 moveto
- (Page 11 obv) show
-
-showpage
-
-
-%%Page: 22 22
-
-% recto-11
-
- MarginBorder CrossBeams Octavia
-
- /clave K1J6 def
- /signa (K1J6-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave N345 def
- /signa (N345-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave K2J6L7 def
- /signa (K2J6L7-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave Z0 def
- /signa (Z0-I1606973870) def
- Fingerboard
-
- 288 540 translate
-
- /clave J3K5 def
- /signa (J3K5-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave N167 def
- /signa (N167-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J2K5M4 def
- /signa (J2K5M4-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave Z0 def
- /signa (Z0-I1606973870) def
- Fingerboard
-
- -288 540 translate
-
- 272  32 moveto
- (Page 11 rev) show
-
-showpage
-
-
-%%Page: 23 23
-
-% verso-12
-
- MarginBorder CrossBeams Octavia
-
- /clave J3K6 def
- /signa (J3K6-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave N45L2 def
- /signa (N45L2-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J3K56M4 def
- /signa (J3K56M4-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J36H def
- /signa (J36H-I1606973870) def
- Fingerboard
-
- 288 540 translate
-
- /clave K1J5 def
- /signa (K1J5-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave N67M2 def
- /signa (N67M2-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave K1J56L7 def
- /signa (K1J56L7-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave K15H def
- /signa (K15H-I1606973870) def
- Fingerboard
-
- -288 540 translate
-
- 272  32 moveto
- (Page 12 obv) show
-
-showpage
-
-
-%%Page: 24 24
-
-% recto-12
-
- MarginBorder CrossBeams Octavia
-
- /clave J3K6 def
- /signa (J3K6-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave N45L2 def
- /signa (N45L2-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J3K56M4 def
- /signa (J3K56M4-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J36H def
- /signa (J36H-I1606973870) def
- Fingerboard
-
- 288 540 translate
-
- /clave K1J5 def
- /signa (K1J5-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave N67M2 def
- /signa (N67M2-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave K1J56L7 def
- /signa (K1J56L7-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave K15H def
- /signa (K15H-I1606973870) def
- Fingerboard
-
- -288 540 translate
-
- 272  32 moveto
- (Page 12 rev) show
-
-showpage
-
-
-%%Page: 25 25
-
-% verso-13
-
- MarginBorder CrossBeams Octavia
-
- /clave K2J6 def
- /signa (K2J6-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave N5L2 def
- /signa (N5L2-I1606973870) def
+ -594 811 translate
+ -90 rotate
+ 
+ /clave  K2J6 def
+ /signa (K2J6-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K26 def
- /signa (K26-I1606973870) def
+ /clave  N5L2 def
+ /signa (N5L2-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave K256 def
- /signa (K256-I1606973870) def
+ /clave  N6M2 def
+ /signa (N6M2-I1607915836) def
  Fingerboard
 
- 288 540 translate
+ 0 144 translate
 
- /clave J2K5 def
- /signa (J2K5-I1606973870) def
+ /clave  J2K5 def
+ /signa (J2K5-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+% 2nd row
 
- /clave N6M2 def
- /signa (N6M2-I1606973870) def
- Fingerboard
-
- 0 -180 translate
-
- /clave J25 def
- /signa (J25-I1606973870) def
- Fingerboard
-
- 0 -180 translate
+ 252 0 translate
 
- /clave J256 def
- /signa (J256-I1606973870) def
+ /clave  K26 def
+ /signa (K26-I1607915836) def
  Fingerboard
-
- -288 540 translate
-
- 272  32 moveto
- (Page 13 obv) show
 
-showpage
+ 0 -144 translate
 
-
-%%Page: 26 26
-
-% recto-13
-
- MarginBorder CrossBeams Octavia
-
- /clave K2J6 def
- /signa (K2J6-I1606973870) def
+ /clave  K256 def
+ /signa (K256-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave N5L2 def
- /signa (N5L2-I1606973870) def
+ /clave  J256 def
+ /signa (J256-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 -144 translate
 
- /clave K26 def
- /signa (K26-I1606973870) def
+ /clave  J25 def
+ /signa (J25-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+% 3rd row
 
- /clave K256 def
- /signa (K256-I1606973870) def
- Fingerboard
-
- 288 540 translate
+ 252 0 translate
 
- /clave J2K5 def
- /signa (J2K5-I1606973870) def
+ /clave  J35 def
+ /signa (J35-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave N6M2 def
- /signa (N6M2-I1606973870) def
+ /clave  Z0 def
+ /signa (Z0-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J25 def
- /signa (J25-I1606973870) def
+ /clave  Z0 def
+ /signa (Z0-I1607915836) def
  Fingerboard
 
- 0 -180 translate
+ 0 144 translate
 
- /clave J256 def
- /signa (J256-I1606973870) def
+ /clave  K16 def
+ /signa (K16-I1607915836) def
  Fingerboard
-
- -288 540 translate
-
- 272  32 moveto
- (Page 13 rev) show
 
 showpage
 
