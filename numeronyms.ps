@@ -121,7 +121,7 @@
 
 /Fingerboard
 {
-  .0 .15 .15 setrgbcolor
+  .0 .0 .0 setrgbcolor
   signa 50 736 Scribe  % diadem
 
   /heads clave 30  6 getinterval def
@@ -129,58 +129,58 @@
 
   draco  0 heads putinterval
   draco  6 tails putinterval 
-  draco 50 724 Scribe
+  draco 49 724 Scribe
 
   /heads clave 15 21 getinterval def
   /tails clave  0 14 getinterval def
 
   draco  0 heads putinterval
   draco 21 tails putinterval 
-  draco 50 712 Scribe
+  draco 49 712 Scribe
 
-  clave 50 700 Scribe  % Sagittarian
+  clave 49 700 Scribe  % Sagittarian
 
   /heads clave 21 15 getinterval def
   /tails clave  0 20 getinterval def
 
   draco  0 heads putinterval
   draco 15 tails putinterval
-  draco 50 688 Scribe
+  draco 49 688 Scribe
 
   /heads clave  6 30 getinterval def
   /tails clave  0  5 getinterval def
 
   draco  0 heads putinterval
   draco 30 tails putinterval
-  draco 50 676 Scribe
+  draco 49 676 Scribe
 
   /heads clave 27  9 getinterval def
   /tails clave  0 26 getinterval def
 
   draco  0 heads putinterval
   draco  9 tails putinterval 
-  draco 50 664 Scribe
+  draco 49 664 Scribe
 
   /heads clave 12 24 getinterval def
   /tails clave  0 11 getinterval def
 
   draco  0 heads putinterval
   draco 24 tails putinterval 
-  draco 50 652 Scribe
+  draco 49 652 Scribe
 
   /heads clave 33  3 getinterval def
   /tails clave  0 32 getinterval def
 
   draco  0 heads putinterval
   draco  3 tails putinterval 
-  draco 50 640 Scribe
+  draco 49 640 Scribe
 
   /heads clave 18 18 getinterval def
   /tails clave  0 17 getinterval def
 
   draco  0 heads putinterval
   draco 18 tails putinterval 
-  draco 50 628 Scribe
+  draco 49 628 Scribe
 } def
 
 /MarginBorder
@@ -189,41 +189,34 @@
   576    0 rlineto    % 576 pts wide
     0 -756 rlineto
   closepath
-  .6 setgray
+  .5 setgray
   .2 setlinewidth
   stroke
 } bind def
 
 /CrossBeams
 {
+  .5 setgray
+  .2 setlinewidth
+
    18   54 moveto
   576    0 rlineto
-  .6 setgray
-  .2 setlinewidth
   stroke
 
    18  234 moveto
   576    0 rlineto
-  .6 setgray
-  .2 setlinewidth
   stroke
 
    18  414 moveto
   576    0 rlineto
-  .6 setgray
-  .2 setlinewidth
   stroke
 
    18  594 moveto
   576    0 rlineto
-  .6 setgray
-  .2 setlinewidth
   stroke
 
   306  774 moveto  % vertical center line
     0 -720 rlineto
-  .6 setgray
-  .2 setlinewidth
   stroke
 } bind def
 
@@ -233,7 +226,7 @@
   252    0 rlineto    % 252 pts wide
     0 -144 rlineto
   closepath
-  .6 setgray
+  .5 setgray
   .2 setlinewidth
   stroke
 } bind def
@@ -244,7 +237,7 @@
   234    0 rlineto     % 234 pts wide
     0 -126 rlineto
   closepath
-  .8 setgray
+  .5 setgray
   .2 setlinewidth
   stroke
 } bind def
